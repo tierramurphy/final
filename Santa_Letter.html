@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Letter to Santa</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="Music.js"> </script>
+    <style>
+        body{
+            background-color: darkslateblue;
+            font-family: sans-serif;
+            padding: 0px;
+            margin: 0px;
+        }
+        h1 {
+            text-align: center;
+        }
+        ul {
+            list-margin-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: black;
+            list-style-type: none;
+        }
+        li{
+            float: left;
+            border-right:1px solid darkslateblue;
+        }
+        li a{
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        li a:hover{
+            background-color: darkslategray;
+        }
+        div{
+            position:absolute;
+        }
+        #container {
+            display:block;
+            width: 560px;
+            height:450px;
+            position: relative;
+            top: 15px;
+            left: 537px;
+
+        }
+        #instructions{
+            width: 330px;
+            position: absolute;
+            left: 53px;
+            font-size: 30px;
+            top: 125px;
+        }
+        #pic{
+            position: absolute;
+            top: 290px;
+            left: 0px;
+        }
+    </style>
+</head>
+<body>
+<h1>Merry Christmas!</h1>
+<ul>
+    <li><a href="mainPage.html">Home</a></li>
+    <li><a href="Christmas_Countdown.html">Christmas Countdown (2016)</a></li>
+    <li><a href="Santa_Letter.html">Write a Letter to Santa</a></li>
+
+</ul>
+<audio autoplay>
+    <source id ="Santa_Baby" src="Santa%20Baby%20By%20Eartha%20Kitt.mp3" type="audio/mpeg" onload="LoopSong('Santa_Baby')">
+</audio>
+<div id="container">
+    <form id="email">
+        First Name:<br>
+        <input id="nameF" type="text" name="firstname"> <br>
+        Last Name:<br>
+        <input id="nameL" type="text" name="lastname" ><br>
+        Letter<br>
+        <textarea id="letter" type="text" name="santaLetter" style="height:300px;width:400px;font-size:12pt;"></textarea><br>
+        <input type="button" value="Send Letter to Santa" id="button"</button>
+    </form>
+</div>
+<div id="instructions">
+    <p>You can write your letter to Santa here and we'll send it straight to him!</p>
+</div>
+<img id="pic" src="Letter_to_Santa_logo.png" height="286" width="480"/> </body>
+<script src="saveEmail.js"></script>
+
+</html>

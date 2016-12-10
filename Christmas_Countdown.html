@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Christmas Countdown</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <style>
+        body{
+            background-color: darkslateblue;
+            font-family: sans-serif;
+        }
+        h1 {
+            text-align: center;
+        }
+        ul {
+            list-margin-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: black;
+            list-style-type: none;
+        }
+        li{
+            float: left;
+            border-right:1px solid darkslateblue;
+        }
+        li a{
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        li a:hover{
+            background-color: darkslategray;
+        }
+        #clockdiv > div{
+            padding: 10px;
+            border-radius: 3px;
+            background: darkslategray;
+            display: inline-block;
+            font-size:32px;
+            position: relative;
+            top: 50%;
+            left: 30%;
+        }
+        #elves{
+            position: relative;
+            top: 90%;
+            left: 26%;
+        }
+        #snip{
+            position: relative;
+            top: 25%;
+            left: 30%;
+            font-size: 33px;
+        }
+    </style>
+</head>
+<body>
+<h1>Merry Christmas!</h1>
+<ul>
+    <li><a href="mainPage.html">Home</a></li>
+    <li><a href="Christmas_Countdown.html">Christmas Countdown (2016)</a></li>
+    <li><a href="Santa_Letter.html">Write a Letter to Santa</a></li>
+</ul>
+<audio autoplay>
+    <source id ="Mariah" src="Mariah%20Carey%20-%20All%20I%20Want%20For%20Christmas%20Is%20You%20-%20Lyrics.mp3" type="audio/mpeg" onload="LoopSong('Mariah')">
+</audio>
+<div id="snip">
+    <p>Here's how far away Christmas is!</p>
+</div>
+<script src="Music.js"> </script>
+<div id="clockdiv">
+    <div>
+        <span class="days"></span>
+        <div class="smalltext">Days</div>
+    </div>
+    <div>
+        <span class="hours"></span>
+        <div class="smalltext">Hours</div>
+    </div>
+    <div>
+        <span class="minutes"></span>
+        <div class="smalltext">Minutes</div>
+    </div>
+    <div>
+        <span class="seconds"></span>
+        <div class="smalltext">Seconds</div>
+    </div>
+</div>
+<img id="elves" src="elves.png" height="219" width="605"/>
+<script src="finalCountdown.js"></script>
+</body>
+</html>

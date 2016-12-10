@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<head>
+    <title>Christmas Fun</title>
+    <script
+            src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+    <style>
+        body{
+            background-color: darkslateblue;
+            font-family: sans-serif;
+        }
+        h1 {
+            text-align: center;
+        }
+        #Christmas_Tree{
+            width: 320px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -160px;
+            margin-top: -180px;
+        }
+        ul {
+            list-margin-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: black;
+            list-style-type: none;
+        }
+        li{
+            float: left;
+            border-right:1px solid darkslateblue;
+        }
+        li a{
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        li a:hover{
+            background-color: darkslategray;
+        }
+        #Santa{
+            position: absolute;
+            top:570px;
+            display: block;
+        }
+        #intro{
+            position: relative;
+            top: 50%;
+            left: 0%;
+            width: 330px;
+        }
+        p{
+            font-size: 35px;
+
+        }
+        #intro2{
+            position: relative;
+            top: -317px;
+            left: 65%;
+            width: 335px;
+        }
+    </style>
+<body>
+<h1>Merry Christmas!</h1>
+<ul>
+    <li><a href="mainPage.html">Home</a></li>
+    <li><a href="Christmas_Countdown.html">Christmas Countdown (2016)</a></li>
+    <li><a href="Santa_Letter.html">Write a Letter to Santa</a></li>
+    <br>
+</ul>
+<img id ="Christmas_Tree"src="christmasTree.png" alt="Image not found."/>
+<img id="Santa" src="sclaus.gif" height="75" width="400" onload="startMoving('Santa')"/>
+<audio autoplay>
+    <source id ="Feliz" src="Feliz%20Navidad-%20Jose%20Feliciano%20lyrics%20HQ.mp3" type="audio/mpeg">
+</audio>
+<script src="Music.js"> </script>
+<div id="intro">
+    <p>
+        The Holidays are near! <br>
+        So lets celebrate and have a little Christmas fun! <br>
+        Explore the site and have fun.
+    </p>
+</div>
+<div id="intro2">
+    <p>
+        Write Santa a Letter. Countdown the minutes <br> to Christmas. Get in the holiday Spirit!
+    </p>
+</div>
+<script src="moveSanta.js"></script>
+</body>
+</html>
